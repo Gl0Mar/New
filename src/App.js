@@ -4,6 +4,7 @@ import Home from './Componets/Pages/PageHome';
 import Blog from './Componets/Pages/PageBlog';
 import Contacto from './Componets/Pages/PageContacto';
 import Nosotros from './Componets/Pages/PageNosotros';
+import './Assest/Estilos.scss';
 
 function App() {
   return (
