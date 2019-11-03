@@ -8,14 +8,14 @@ import Nosotros from './Componets/Pages/PageNosotros';
 function App() {
   return (
     <BrowserRouter>
-      <Redirect from="/" to="/pageHome" />
-        <Switch>
-          <Route exact path = "/pageHome" component = {Home}/>
-          <Route exact path = "/pageBlog" component = {Blog}/>
-          <Route exact path = "/pageContacto" component = {Contacto}/>
-          <Route exact path = "/pageNosotros" component = {Nosotros}/>
-        </Switch>
-    </BrowserRouter>
+    <Redirect from="/" to="/pageHome" />
+    <Switch>
+      <Route exact path = "/pageHome" render = {()=><Home/>}/>
+      <Route exact path = "/pageNosotros" render = {() => <Nosotros/>} />
+      <Route exact path = "/pageBlog" render = {() => <Blog/>} />
+      <Route exact path = "/pageContacto" render = {() => <Contacto/>} />
+    </Switch>
+</BrowserRouter>
   );
 }
 
